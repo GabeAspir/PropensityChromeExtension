@@ -12,3 +12,10 @@ anychart.onDocumentReady(function () {
 	chart.container("chartContainer");
 	chart.draw();
 });
+$(document).ready(function() {
+	$('.nav-item .nav-link').on('click', function(event) {
+		event.preventDefault();
+		$('.nav-item').removeClass('active');
+		$(this).parent().addClass('active');
+	});
+});
