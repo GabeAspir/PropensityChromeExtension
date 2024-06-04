@@ -8,23 +8,28 @@
 	font-weight: 500;
 }
 
-.navbar {
-	background-color: #001C59;
+.g__top_of_page {
+	background-color: #001C59; /*Should be --primary */
 }
 
+.g__outer_nav_box{
+	background-color: #fff;
+}
+
+
+
 .navbar-nav .nav-item .nav-link i {
-	font-size: 24px; /* Icon size */
+	font-size: 14px; /* Icon size */
 	display: block;
 }
 
 .navbar-nav .nav-item .nav-link .nav-underline {
 	content: '';
 	position: absolute;
-	width: 50%;
+	width: 75%;
 	height: 4px;
 	background-color: #5D50E6; /* Purple color */
 	bottom: 0;
-	left: 25%;
 	display: none;
 }
 
@@ -72,6 +77,11 @@
 .account-card .status .badge {
 	margin-right: 5px;
 }
+.g__close_button {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
 
 .account-card .btn-add {
 	background-color: var(--primary);
@@ -92,7 +102,4 @@
 .g__desktop-logo {
 	width: 164.06px;
 	height: 20.29px;
-	top: 22px;
-	left: 25px;
-	position: fixed; /* Fix the image position relative to the viewport */
 }

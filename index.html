@@ -7,17 +7,28 @@
 		<link rel="stylesheet" type="text/css" href="https://addapptation.blob.core.windows.net/addapptation-stylesheets/anychart-ui.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.addapptation.com/addapptation-stylesheets/bootstrap-4.3.1/css/bootstrap.min.css" media="all" />
 
-		<link rel="stylesheet" type="text/css" href="https://cdn.addapptation.com/addapptation-stylesheets/fontawesome-pro-5.10.0-11-web/css/all.min.css" media="all" />
+		<link
+				rel="stylesheet"
+				type="text/css"
+				href="https://addapptation.blob.core.windows.net/addapptation-stylesheets/fontawesome-pro-5.10.0-11-web/css/all.min.css"
+		/>
 		<link rel="stylesheet" type="text/css" href="https://cdn.addapptation.com/addapptation-qa/granite/v6/graniteGlobal.css" />
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg">
+		<div class="g__top_of_page d-flex p-2 position-relative">
 			<a class="navbar-brand" href="#">
 				<img src="https://cdn.addapptation.com/addapptation-customer-assets/propensity/propensity-data/propensity_long_light.png" class="g__desktop-logo" alt="Logo">
 			</a>
-			<ul class="navbar-nav ml-auto">
+			<!-- Close button -->
+			<div class="g__close_button">
+				x
+			</div>
+		</div>
+		<nav class="g__outer_nav_box navbar navbar-expand-lg p-2">
+
+			<ul class="g__inner_tabs navbar-nav w-100 flex-row d-flex justify-content-between">
 				<li class="nav-item active">
 					<a class="nav-link" href="#">
 						<i class="fas fa-building"></i><br>Account
@@ -27,16 +38,20 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">
 						<i class="fas fa-user"></i><br>Contacts
+						<div class="nav-underline"></div>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">
-						<i class="fas fa-signal-stream"></i><br>Signals
+						<i class="fas fa-signal"></i><br>Signals
+						<div class="nav-underline"></div>
+						<!--Change to signal stream-->
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">
 						<i class="fas fa-bolt"></i><br>Engagement
+						<div class="nav-underline"></div>
 					</a>
 				</li>
 			</ul>
