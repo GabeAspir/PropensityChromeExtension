@@ -12,11 +12,9 @@
 	background-color: #001C59; /*Should be --primary */
 }
 
-.g__outer_nav_box{
+.g__outer_nav_box {
 	background-color: #fff;
 }
-
-
 
 .navbar-nav .nav-item .nav-link i {
 	font-size: 14px; /* Icon size */
@@ -77,6 +75,7 @@
 .account-card .status .badge {
 	margin-right: 5px;
 }
+
 .g__close_button {
 	position: absolute;
 	top: 5px;
@@ -102,4 +101,50 @@
 .g__desktop-logo {
 	width: 164.06px;
 	height: 20.29px;
+}
+.custom-card-link-wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.custom-card-link {
+	color: #4788FF;
+	font-size: 16px;
+	text-decoration: none;
+	margin-left: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.custom-card-link i {
+	margin-right: 10px;
+	font-size: 14px;
+	width: 18px;
+	height: 21px;
+}
+
+.g__left_icon{
+	color: #757575;
+}
+
+.custom-card-link:hover {
+	text-decoration: underline;
+	color: #4788FF;
+}
+
+.custom-card-link:hover i {
+	text-decoration: none !important; /* Ensure the icons are not underlined */
+	color: inherit; /* Keep the icons color same as link */
+}
+
+.custom-arrow-icon {
+	margin-left: 1em; /* Space after the link */
+	font-size: 14px; /* Size for the arrow icon */
+	color: #4788FF; /* Same color as the link */
+	text-decoration: none; /* Remove underline */
+}
+
+.custom-arrow-icon:hover {
+	text-decoration: none !important; /* Ensure the arrow icon is not underlined */
 }
