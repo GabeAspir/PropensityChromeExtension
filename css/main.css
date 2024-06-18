@@ -182,3 +182,35 @@ body {
 .text-primary-blue {
 	color: #081AA1;
 }
+
+.g__linkedin_default i {
+	color: #0077B5;
+	font-size: 16px;
+}
+
+.g__linkedin_alt i {
+	color: #AEAEB2;
+	font-size: 16px;
+}
+
+.g__mail_phone_default i {
+	color: #757575;
+	font-size: 16px;
+}
+
+.g__mail_phone_alt i {
+	color: #C7C7CC;
+	font-size: 16px;
+}
+
+.g__contact_name {
+	color: #757575;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+.g__contact_job {
+	color: #757575;
+	font-weight: 400;
+	letter-spacing: .2px;
+}
