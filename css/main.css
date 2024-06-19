@@ -214,3 +214,50 @@ body {
 	font-weight: 400;
 	letter-spacing: .2px;
 }
+
+
+#copyButton {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.notification {
+	display: flex;
+	align-items: center;
+	background-color: #00B267;
+
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0.5s;
+}
+
+.notification span {
+	margin-right: 10px;
+}
+
+.notification.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.g__textForEmptyContactsPage {
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+}
+
+.g__emptyContactsPageIcon {
+	font-weight: 900;
+	color: #AEAEB2;
+	font-size: 54px;
+	letter-spacing: 0.5px;
+}
