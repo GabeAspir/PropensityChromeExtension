@@ -263,3 +263,7 @@ body {
 	font-size: 54px;
 	letter-spacing: 0.5px;
 }
+
+.g__noContactsBody {
+	height: calc(100vh - 240px);
+}
