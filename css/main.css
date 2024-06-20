@@ -267,3 +267,16 @@ body {
 .g__noContactsBody {
 	height: calc(100vh - 240px);
 }
+
+.g__identSignal {
+	color: #757575;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+}
+
+.g__identOccurrence {
+	color: #757575;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	font-family: 'Montserrat', sans-serif;
+}
