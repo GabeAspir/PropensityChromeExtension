@@ -280,3 +280,17 @@ body {
 	letter-spacing: 0.2px;
 	font-family: 'Montserrat', sans-serif;
 }
+
+.g__success_icon_intent_signal {
+	font-weight: 400;
+	font-size: 14px;
+	color: #009C4C;
+	letter-spacing: 0.2px;
+}
+
+.g__1st_Party_Score {
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	font-family: 'Montserrat', sans-serif;
+}
