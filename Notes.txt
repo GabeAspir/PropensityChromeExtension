@@ -1,0 +1,1 @@
+- Replace all "fas fa-wifi" symbols with correct icons. It isn't displaying correctly for me
