@@ -67,9 +67,13 @@
 
 .account-card .status {
 	display: flex;
-	align-items: center;
+	align-items: start;
 	justify-content: space-between;
 	margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+
 }
 
 .account-card .status .badge {
@@ -80,6 +84,7 @@
 	position: absolute;
 	top: 5px;
 	right: 10px;
+	color: #7B72F5;
 }
 
 .account-card .btn-add {
@@ -293,4 +298,8 @@ body {
 	font-size: 14px;
 	letter-spacing: 0.5px;
 	font-family: 'Montserrat', sans-serif;
+}
+
+.fa-check {
+	color: #00B267;
 }
