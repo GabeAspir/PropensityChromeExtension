@@ -317,6 +317,21 @@ body {
 }
 
 .g___success_propensity_score_color {
-	color: #009C4C;
-	background: #C3F6D2;
+	background: var(--success-100);
+	color: var(--success-600)
+}
+
+.g___warning_propensity_score_color {
+	background: var(--warning-100);
+	color: var(--warning-600);
+}
+
+.g___danger_propensity_score_color {
+	background: var(--danger-100);
+	color: var(--danger-600);
+}
+
+.g___none_propensity_score_color {
+	background: var(--neutral-50);
+	color: var(--neutral-500);
 }
