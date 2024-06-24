@@ -335,3 +335,7 @@ body {
 	background: var(--neutral-50);
 	color: var(--neutral-500);
 }
+
+.fa-external-link {
+	color: #4788FF;
+}
