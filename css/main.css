@@ -339,3 +339,7 @@ body {
 .fa-external-link {
 	color: #4788FF;
 }
+
+.g__notif_icon {
+	color: white !important;
+}
