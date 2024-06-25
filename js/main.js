@@ -1,17 +1,19 @@
-// anychart.onDocumentReady(function () {
-// 	var data = [
-// 		["January", 1000],
-// 		["February", 1200],
-// 		["March", 1800],
-// 		["April", 1500],
-// 		["May", 1600],
-// 		["June", 1900],
-// 	];
-// 	var chart = anychart.line();
-// 	var lineSeries = chart.line(data);
-// 	chart.container("chartContainer");
-// 	chart.draw();
-// });
+anychart.onDocumentReady(function () {
+	var data = [
+		["Ad Impressions", 49],
+		["Ad Clicks", 4],
+		["Email Opens", 12],
+		["Website Visits", 4]
+	];
+	var chart = anychart.pie(data);
+	chart.innerRadius("60%");
+	chart.sort("desc");
+	chart.legend().itemsLayout("vertical");
+	chart.legend().position("right");
+	chart.legend().align("top");
+	chart.container("doughnutChartContainer");
+	chart.draw();
+});
 document.getElementById('copyButton').addEventListener('click', function() {
 	// Simulate copy to clipboard
 	navigator.clipboard.writeText('Text to copy').then(function() {

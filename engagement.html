@@ -52,62 +52,11 @@
 </nav>
 <!-- Main Content -->
 <div class="container mt-5">
-	<div class="card">
-		<div class="card-body">
-			<div class="account-card p-2">
-				<div class="d-flex align-items-center">
-					<div class="company-logo">M</div>
-					<div class="ml-3">
-						<h5>Mozli</h5>
-						<div class="d-flex">
-							<a href="#" class="mr-2"><i class="fab fa-linkedin"></i></a>
-							<a href="#" class="mr-2"><i class="fab fa-facebook"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-						</div>
-					</div>
-					<!-- Should have if statements determine what color, etc -->
-					<div class="ml-auto">
-						<div class="badge badge-pill badge-success p-2">98</div>
-					</div>
-				</div>
-				<div class="flex-column status mt-3">
-					<span class="badge badge-danger">Not found in any campaigns</span>
-					<span class="badge badge-success mt-2">Fits Primary Audience</span>
-				</div>
-				<button class="btn btn-add btn-block mt-3">Add to ABM Campaign +</button>
-				<div class="details mt-4">
-					<p><i class="far fa-building"></i> Transportation</p>
-					<p><i class="far fa-flag"></i> Texas, United States 🇺🇸</p>
-					<p><i class="far fa-users"></i> 50-199 Employees</p>
-					<p><i class="far fa-sack"></i> $10 - $50MM</p>
-					<p><i class="far fa-hand-holding-usd"></i> $1.2M raised on July 1, 2021</p>
-					<p><i class="far fa-calendar"></i> Founded 2018</p>
-				</div>
-			</div>
-			<div class="container mt-3">
-				<div class="d-flex flex-column">
-					<div class="custom-card-link-wrapper">
-						<i class="far fa-user g__left_icon"></i>
-						<a href="#" class="custom-card-link mb-0">
-							24 identified contacts
-						</a>
-						<i class="far fa-arrow-right custom-arrow-icon"></i>
-					</div>
-					<div class="custom-card-link-wrapper">
-						<i class="far fa-signal g__left_icon"></i>
-						<a href="#" class="custom-card-link mb-0">
-							4 identified trending intent signals
-						</a>
-						<i class="far fa-arrow-right custom-arrow-icon"></i>
-					</div>
-					<div class="custom-card-link-wrapper">
-						<i class="far fa-users g__left_icon"></i>
-						<a href="#" class="custom-card-link mb-0">
-							140 ABM activities
-						</a>
-						<i class="far fa-arrow-right custom-arrow-icon"></i>
-					</div>
-				</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="chart-card">
+				<h5 class="mb-3">Engagement Over Time</h5>
+			<div id="doughnutChartContainer" style="height: 300px"></div>
 			</div>
 		</div>
 	</div>
