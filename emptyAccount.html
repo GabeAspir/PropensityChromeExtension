@@ -13,37 +13,37 @@
 <body>
 <!-- Navbar -->
 <div class="g__top_of_page d-flex p-2 position-relative">
-    <a class="navbar-brand" href="#">
-        <img src="https://cdn.addapptation.com/addapptation-customer-assets/propensity/propensity-data/propensity_long_light.png" class="g__desktop-logo" alt="Logo">
+    <a class="navbar-brand ml-3" href="#">
+        <img src="https://s3-alpha-sig.figma.com/img/4799/c82b/3261d33c2e0854443128e16af2750429?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IGeCIAiqKq2u9Wjp~6DM69BrxMhIt-Tn1tZhMd9zbnWP66xUzqin6fJbZv-NOzPKJPpaKv9i~NiDK5YHE75ubIXSzaG8NbmIUE-jDjkdnh4C84r~BSRCwvTdwLLTiWw3JZHypXey1kevf~8glpeGRGbUHl8eFeRi4I5Je7TIk9xD6gRRK5B-jwS0S4JOEqakA5pRWjHipgjH3sGX~KFYIYrh16Nk1P6W0-dosv-igqPGqzjEiYV8P9rvp3yEokUHgKq83ZtbYixf~j-Q4Ke0jT8DLUdH9hFYVMUpOlOSVW~ErZVHdqkPY3gPkvo7kZ-IEdcN7N5Ouu16H-AKQr~MFA__" class="g__desktop-logo" alt="Logo">
     </a>
     <!-- Close button -->
     <div class="g__close_button">
-        x
+        <i class="fas fa-times"></i>
     </div>
 </div>
 <nav class="g__outer_nav_box navbar navbar-expand-lg">
     <ul class="g__inner_tabs navbar-nav w-100 flex-row d-flex justify-content-between">
         <li class="nav-item active">
-            <a class="nav-link" href="./emptyAccount.html">
+            <a class="nav-link" href="./account.html">
                 <i class="fas fa-building"></i><br>Account
                 <div class="nav-underline"></div>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./emptyContacts.html">
+            <a class="nav-link" href="./contacts.html">
                 <i class="fas fa-user"></i><br>Contacts
                 <div class="nav-underline"></div>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./emptySignals.html">
+            <a class="nav-link" href="./signals.html">
                 <i class="fas fa-wifi"></i><br>Signals
                 <div class="nav-underline"></div>
                 <!--Change to signal stream-->
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./emptyEngagement.html">
+            <a class="nav-link" href="./engagement.html">
                 <i class="fas fa-bolt"></i><br>Engagement
                 <div class="nav-underline"></div>
             </a>
@@ -51,20 +51,65 @@
     </ul>
 </nav>
 <!-- Main Content -->
-<div class="g__container">
+<div class="container mt-5">
     <div class="card">
-        <div class="card-header d-flex justify-content-between align-items-center bg-white text-dark-gray">
-            <div class="d-flex align-items-center">
-                <span class="mr-3"><i class="fas fa-user"></i></span>
-                <span class="font-weight-bold">Contacts That Fit Primary Audience</span>
+        <div class="card-body">
+            <div class="account-card p-2">
+                <div class="d-flex align-items-center">
+                    <div class="company-logo">M</div>
+                    <div class="ml-3">
+                        <h5>Mozli</h5>
+                        <div class="d-flex">
+                            <a href="#" class="mr-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="mr-2"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Should have if statements determine what color, etc -->
+                    <div class="ml-auto">
+                        <div class="g___propensity_score g___success_propensity_score_color p-2">98</div>
+                        <!--	g___success_propensity_score_color | g___warning_propensity_score_color | g___danger_propensity_score_color | g___none_propensity_score_color	-->
+                    </div>
+                </div>
+                <div class="flex-column status mt-3">
+                    <p><i class="fas fa-times mr-3"></i>Not found in any campaigns</p>
+                    <p><i class="fas fa-check mr-2"></i> Fits Primary Audience</p>
+                </div>
+                <button class="btn btn-add btn-block mt-3">Add to ABM Campaign +</button>
+                <div class="details mt-4">
+                    <p><i class="far fa-building mr-3"></i> Transportation</p>
+                    <p><i class="far fa-flag mr-3"></i> Texas, United States 🇺🇸</p>
+                    <p><i class="far fa-users mr-3"></i> 50-199 Employees</p>
+                    <p><i class="far fa-sack mr-3"></i> $10 - $50MM</p>
+                    <p><i class="far fa-hand-holding-usd mr-3"></i> $1.2M raised on July 1, 2021</p>
+                    <p><i class="far fa-calendar mr-3"></i> Founded 2018</p>
+                </div>
             </div>
-            <span class="badge font-weight-bold">0</span>
-        </div>
-        <div class="card-body text-center g__noContactsBody">
-            <div class="mt-4 mb-2">
-                <i class="fas fa-user g__emptyContactsPageIcon"></i>
+            <div class="container mt-3">
+                <div class="d-flex flex-column">
+                    <div class="custom-card-link-wrapper">
+                        <i class="far fa-user g__left_icon"></i>
+                        <a href="#" class="custom-card-link mb-0">
+                            24 identified contacts
+                        </a>
+                        <i class="far fa-arrow-right custom-arrow-icon"></i>
+                    </div>
+                    <div class="custom-card-link-wrapper">
+                        <i class="fas fa-wifi g__left_icon"></i>
+                        <a href="#" class="custom-card-link mb-0">
+                            4 identified trending intent signals
+                        </a>
+                        <i class="far fa-arrow-right custom-arrow-icon"></i>
+                    </div>
+                    <div class="custom-card-link-wrapper">
+                        <i class="far fa-users g__left_icon"></i>
+                        <a href="#" class="custom-card-link mb-0">
+                            140 ABM activities
+                        </a>
+                        <i class="far fa-arrow-right custom-arrow-icon"></i>
+                    </div>
+                </div>
             </div>
-            <p class="g__textForEmptyContactsPage">No contacts found that fit your primary audience.</p>
         </div>
     </div>
 </div>
