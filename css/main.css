@@ -44,12 +44,17 @@
 	text-decoration: none;
 }
 
-.account-card,
-.chart-card {
+.account-card {
 	background: #fff;
 	border-radius: 10px;
 	padding: 20px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card {
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px;
 }
 
 .account-card .company-logo {
@@ -374,3 +379,48 @@ span.c__tooltip-text.active {
 	opacity: 1;
 	visibility: visible;
 }
+
+.g__last_90_days {
+	color: #757575;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+
+.g__engagement_list_items {
+	color: #757575;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.g__dot_For_list {
+	width: 12px;
+	height: 12px;
+}
+
+.g__ad_impressions_color {
+	color: #081AA1;
+}
+
+.g__ad_clicks_color {
+	color: #4788FF;
+}
+
+.g__email_opens_color {
+	color: #9100AB;
+}
+
+.g__website_visits_color{
+	color: #5D50E6;
+}
+
+.g__number_for_engagement_item {
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	align-self: end;
+	font-family: 'Montserrat', sans-serif;
+}
+
