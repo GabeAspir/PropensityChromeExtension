@@ -424,3 +424,16 @@ span.c__tooltip-text.active {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.g__total_website_visits {
+	color: #757575;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+}
+
+.g__total_website_visits_number {
+	color: #AA4CFC;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
