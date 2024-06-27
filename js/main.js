@@ -5,6 +5,14 @@ anychart.onDocumentReady(function () {
 		["Email Opens", 12],
 		["Website Visits", 4]
 	];
+
+	var colors = [
+		"#081AA1",
+		"#9100AB",
+		"#4788FF",
+		"#5D50E6"
+	]
+
 	var chart = anychart.pie(data);
 	chart.innerRadius("60%");
 	chart.sort("desc");
@@ -12,6 +20,7 @@ anychart.onDocumentReady(function () {
 	chart.legend().position("right");
 	chart.legend().align("top");
 	chart.container("doughnutChartContainer");
+	chart.palette(colors);
 	chart.draw();
 });
 document.getElementById('copyButton').addEventListener('click', function() {
