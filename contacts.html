@@ -51,7 +51,6 @@
 	</ul>
 </nav>
 <!-- Main Content -->
-<button id="copyButton">Copy to clipboard</button>
 <div id="notification" class="notification hidden">
 	<span>Copied to clipboard</span>
 	<i class="fas fa-check g__notif_icon"></i>
@@ -74,7 +73,13 @@
 				</div>
 				<div>
 					<a href="#" class="btn btn-link btn-sm g__linkedin_default"><i class="fab fa-linkedin"></i></a>
-					<a href="#" class="btn btn-link btn-sm g__mail_phone_default"><i class="far fa-envelope"></i></a>
+					<a href="#" class="btn btn-link btn-sm g__mail_phone_default">
+						<div class="c__tooltip">
+							<i class="far fa-envelope c__tooltip-icon"></i>
+							<span class="c__tooltip-text">Tooltip Copy <i class="far fa-copy ml-1"></i></span>
+						</div>
+<!--						<i class="far fa-envelope"></i>-->
+					</a>
 					<a href="#" class="btn btn-link btn-sm g__mail_phone_default"><i class="far fa-phone"></i></a>
 				</div>
 			</li>
@@ -98,5 +103,40 @@
 <script src="https://addapptation.blob.core.windows.net/addapptation-stylesheets/anychart-bundle.js"></script>
 <script src="https://cdn.addapptation.com/addapptation-stylesheets/bootstrap-4.3.1/js/bootstrap.bundle.min.js" media="all"></script>
 <script src="./js/main.js"></script>
+<script>
+	const tooltipsArr = document.querySelectorAll(".c__tooltip");
+	if (tooltipsArr) {
+		tooltipsArr.forEach((tooltip) => {
+			const icon = tooltip.querySelector(".c__tooltip-icon");
+			const text = tooltip.querySelector(".c__tooltip-text");
+			icon.addEventListener("mouseover", () => {
+				text.classList.add("active");
+			});
+			icon.addEventListener("mouseout", () => {
+				text.classList.remove("active");
+			});
+			icon.addEventListener("click", () =>{
+				notification.classList.add('show');
+				// Hide notification after 2 seconds
+				setTimeout(function() {
+					notification.classList.remove('show');
+				}, 2000);
+			});
+			text.addEventListener("click", () =>{
+				notification.classList.add('show');
+				// Hide notification after 2 seconds
+				setTimeout(function() {
+					notification.classList.remove('show');
+				}, 2000);
+			});
+			text.addEventListener("mouseover", () => {
+				text.classList.add("active");
+			});
+			text.addEventListener("mouseout", () => {
+				text.classList.remove("active");
+			});
+		});
+	}
+</script>
 </body>
 </html>

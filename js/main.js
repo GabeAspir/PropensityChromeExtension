@@ -23,16 +23,3 @@ anychart.onDocumentReady(function () {
 	chart.palette(colors);
 	chart.draw();
 });
-document.getElementById('copyButton').addEventListener('click', function() {
-	// Simulate copy to clipboard
-	navigator.clipboard.writeText('Text to copy').then(function() {
-		// Show notification
-		var notification = document.getElementById('notification');
-		notification.classList.add('show');
-
-		// Hide notification after 2 seconds
-		setTimeout(function() {
-			notification.classList.remove('show');
-		}, 2000);
-	});
-});
